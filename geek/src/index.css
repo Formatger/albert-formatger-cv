@@ -282,6 +282,9 @@ a:hover { color: #fff; text-shadow: var(--glow); }
 .navbar-link:hover .navbar-link-prefix { color: var(--green-secondary); }
 
 .navbar-cv-btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   background: transparent;
   border: 1px solid var(--green-primary);
   color: var(--green-primary);

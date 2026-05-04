@@ -19,6 +19,9 @@ function Navbar() {
         <span className="navbar-path">~</span>
         <span className="navbar-cursor">█</span>
       </div>
+      <button className="navbar-cv-btn" onClick={() => window.print()}>
+        ↓ cv.pdf
+      </button>
       <ul className="navbar-links">
         {links.map(link => (
           <li key={link}>
@@ -28,9 +31,6 @@ function Navbar() {
           </li>
         ))}
       </ul>
-      <button className="navbar-cv-btn" onClick={() => window.print()}>
-        ↓ cv.pdf
-      </button>
     </nav>
   )
 }
