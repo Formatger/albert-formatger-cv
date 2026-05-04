@@ -28,6 +28,9 @@ function Navbar() {
           </li>
         ))}
       </ul>
+      <button className="navbar-cv-btn" onClick={() => window.print()}>
+        ↓ cv.pdf
+      </button>
     </nav>
   )
 }
