@@ -1,4 +1,4 @@
-import avatarSvg from '../assets/avatar.svg'
+import avatarSvg from '../assets/avatar.png'
 
 function About() {
   return (
