@@ -375,6 +375,7 @@ a:hover { color: #fff; text-shadow: var(--glow); }
   background: var(--bg-card);
   overflow: hidden;
   position: relative;
+  z-index: 10000;
   transition: border-color var(--transition), box-shadow var(--transition);
 }
 .avatar-img {
