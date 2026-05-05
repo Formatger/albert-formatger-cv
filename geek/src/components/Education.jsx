@@ -6,7 +6,15 @@ const EDUCATION = [
     icon: '</>',
     details: [
       'Python, React.js, Next.js, JavaScript, HTML5, CSS3, MySQL',
-      'Freelance projects: web apps with React.js, cost calculator with Python',
+    ],
+  },
+  {
+    period: '2022',
+    title: 'Front End Developer Bootcamp',
+    institution: 'Ironhack Barcelona',
+    icon: '</>',
+    details: [
+      'HTML5, CSS3, JavaScript, React.js, Node.js',
     ],
   },
   {

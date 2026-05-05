@@ -908,7 +908,6 @@ a:hover { color: #fff; text-shadow: var(--glow); }
   .about-stats { gap: 20px; }
   .exp-header { flex-direction: column; }
   .footer-content { flex-direction: column; gap: 6px; text-align: center; }
-  .navbar-cv-btn { display: none; }
 }
 
 /* ============================================
@@ -953,7 +952,7 @@ a:hover { color: #fff; text-shadow: var(--glow); }
 .cvp-subtitle {
   font-size: 10pt;
   color: #4a5568;
-  margin: 0 0 8px;
+  margin: 0 0 6px;
   font-style: italic;
 }
 .cvp-contact-row {
@@ -1064,6 +1063,13 @@ a:hover { color: #fff; text-shadow: var(--glow); }
 }
 .cvp-exp-points li {
   padding: 1px 0;
+}
+
+.cvp-generated {
+  text-align: right;
+  font-size: 7.5pt;
+  color: #999;
+  margin-bottom: 8px;
 }
 
 @media print {

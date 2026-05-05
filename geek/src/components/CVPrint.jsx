@@ -5,15 +5,18 @@ export default function CVPrint() {
     <div id="cv-print">
       <div className="cvp-page">
 
+        <div className="cvp-generated">CV generated with albertformatger.com</div>
+
         <header className="cvp-header">
           <img src={avatarImg} className="cvp-avatar" alt="Albert Formatger" />
           <div className="cvp-header-info">
             <h1 className="cvp-name">Albert Formatger</h1>
-            <p className="cvp-subtitle">Front End Developer · Industrial Engineer</p>
+            <p className="cvp-subtitle">Software Developer · Industrial Engineer</p>
             <div className="cvp-contact-row">
               <span>albert_furma@hotmail.com</span>
               <span>+34 638 137 451</span>
               <span>linkedin.com/in/albertformatger</span>
+              <span>Portfolio: albertformatger.com</span>
               <span>Premià de Mar, Barcelona</span>
             </div>
           </div>
@@ -76,7 +79,7 @@ export default function CVPrint() {
             <section className="cvp-section">
               <h2 className="cvp-section-title">Software</h2>
               <ul className="cvp-soft-list">
-                <li>VS Code, GitHub, Figma</li>
+                <li>VS Code, GitHub, Figma, Vercel, Render</li>
                 <li>Power BI, MS Office</li>
                 <li>SolidWorks, AutoCAD, MasterCAM</li>
                 <li>Matlab, R, Maple</li>
@@ -207,6 +210,12 @@ export default function CVPrint() {
                   detail: 'Python, React.js, Next.js, JavaScript, HTML5, CSS3, MySQL',
                 },
                 {
+                  period: '2022',
+                  title: 'Front End Developer Bootcamp',
+                  institution: 'Ironhack Barcelona',
+                  detail: 'HTML5, CSS3, JavaScript, React.js, Node.js',
+                },
+                {
                   period: '2013 – 2017',
                   title: "Bachelor's Degree in Mechanical Engineering",
                   institution: 'Universitat Politècnica de Catalunya (UPC) — EUETIB Barcelona',
@@ -233,6 +242,7 @@ export default function CVPrint() {
 
         </div>
       </div>
-    </div>
+
+      </div>
   )
 }

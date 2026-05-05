@@ -21,7 +21,7 @@ const SOFT_SKILLS = [
 ]
 
 const SOFTWARE = [
-  'VS Code', 'GitHub', 'Figma', 'Power BI', 'GIMP',
+  'VS Code', 'GitHub', 'Figma', 'Vercel', 'Render', 'Power BI', 'GIMP',
   'MS Office (Word, Excel, PowerPoint, Outlook, Teams)',
   'SolidWorks 3D', 'AutoCAD', 'MasterCAM',
   'Matlab', 'R', 'Maple', 'Claude AI', 'ChatGPT',
