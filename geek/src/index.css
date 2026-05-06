@@ -281,6 +281,14 @@ a:hover { color: #fff; text-shadow: var(--glow); }
 }
 .navbar-link:hover .navbar-link-prefix { color: var(--green-secondary); }
 
+.navbar-top {
+  display: flex;
+  align-items: center;
+}
+.navbar-hamburger {
+  display: none;
+}
+
 .navbar-cv-btn {
   position: absolute;
   left: 50%;
@@ -888,9 +896,74 @@ a:hover { color: #fff; text-shadow: var(--glow); }
    RESPONSIVE
    ============================================ */
 @media (max-width: 900px) {
+  .navbar {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 10px 20px;
+  }
+  .navbar-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar-hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 22px;
+    height: 16px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    flex-shrink: 0;
+  }
+  .navbar-hamburger span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: var(--green-primary);
+    border-radius: 1px;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    box-shadow: var(--glow);
+  }
+  .navbar-hamburger--open span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+  .navbar-hamburger--open span:nth-child(2) {
+    opacity: 0;
+  }
+  .navbar-hamburger--open span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+  .navbar-cv-btn {
+    position: static;
+    transform: none;
+    margin-top: 8px;
+    align-self: flex-start;
+  }
+  .navbar-links {
+    display: none;
+  }
+  .navbar-links--open {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid var(--green-border);
+    width: 100%;
+  }
+  .navbar-links--open li {
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(0, 255, 65, 0.08);
+  }
+  .navbar-links--open .navbar-link {
+    font-size: 0.88rem;
+  }
   .hero {
     flex-direction: column;
-    padding: 100px 24px 60px;
+    padding: 120px 24px 60px;
     text-align: left;
   }
   .hero-terminal { flex: none; width: 100%; }
@@ -898,7 +971,6 @@ a:hover { color: #fff; text-shadow: var(--glow); }
   .avatar-container { flex-direction: row; align-items: center; }
   .skills-grid { grid-template-columns: 1fr; }
   .contact-grid { grid-template-columns: 1fr; }
-  .navbar-links { display: none; }
 }
 
 @media (max-width: 600px) {
